@@ -1,6 +1,6 @@
 import { Container, Image, Text, Item } from './WeatherDetails.styled';
 import humidityImage from './../../images/humidity.png';
-import windImage from './../../images/wind.png';
+import windImage from './../../images/wind.png';  
 
 const WeatherDetails = ({ humidity, wind, pressure, clouds }) => {
     return (
