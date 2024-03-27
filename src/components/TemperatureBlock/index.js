@@ -1,1 +1,1 @@
-export * from './TemperatureBlock'
+export * from './TemperatureBlock';

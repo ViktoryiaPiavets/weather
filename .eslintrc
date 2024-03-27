@@ -1,0 +1,77 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "computed-property-spacing": [
+            "error",
+            "never"
+        ],
+        "no-trailing-spaces": "error",
+        "keyword-spacing": "error",
+        "spaced-comment": [
+            "error",
+            "always"
+        ],
+        "vars-on-top": "error",
+        "no-undef": "error",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "eol-last": "error",
+        "no-multiple-empty-lines": "error",
+        "no-eval": "error",
+        "valid-typeof": "error",
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": true
+            }
+        ],
+        "indent": [
+            "error",
+            2
+        ],
+        "no-console": "off",
+        "no-extra-semi": "error",
+        "no-unreachable": "error",
+        "no-unused-expressions": "error",
+        "max-len": [
+            "error",
+            160,
+            2
+        ],
+        "arrow-parens": "error",
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off"
+    }
+}

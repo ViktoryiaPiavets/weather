@@ -3,7 +3,7 @@ import { cityReducer } from './cityReducer';
 import { locationReducer } from './locationReducer';
 
 export const rootReducer = combineReducers({
-    city: cityReducer,
-    coords: locationReducer
+  city: cityReducer,
+  coords: locationReducer
 })
 

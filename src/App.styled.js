@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 const PageWrapper = styled.div`
-    padding: 40px;
+    height: 100vh;
+    padding: 40px;    
 `
 
 export {
-    PageWrapper
+  PageWrapper
 }

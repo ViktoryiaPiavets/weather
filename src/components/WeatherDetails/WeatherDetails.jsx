@@ -1,38 +1,32 @@
 import { Container, Image, Text, Item } from './WeatherDetails.styled';
-import humidityImage from './../../images/humidity.png';
-import windImage from './../../images/wind.png';  
+import { ReactComponent as HumidityImage } from './../../images/humidity.svg';
+import { ReactComponent as WindImage } from './../../images/wind.svg';
+import { ReactComponent as CloudsImage } from './../../images/clouds.svg';
+import { ReactComponent as PressureImage } from './../../images/pressure.svg';
 
 const WeatherDetails = ({ humidity, wind, pressure, clouds }) => {
-    return (
-        <Container>
-            <Item>
-                <Image>
-                    <img src={humidityImage} alt={'Drops icon'}/>
-                </Image>
-                <Text>{`Humidity ${humidity}%`}</Text>
-            </Item>
-            <Item>
-                <Image>
-                    <img src={windImage} alt={'Wind icon'} />
-                </Image>
-                <Text>{`Wind ${wind} m/s`}</Text>
-            </Item>
-            <Item>
-                <Image>
-                    <img src={windImage} alt={'Pressure icon'} />
-                </Image>
-                <Text>{`Pressure ${pressure} hPa`}</Text>
-            </Item>
-            <Item>
-                <Image>
-                    <img src={windImage} alt={'Clouds icon'} />
-                </Image>
-                <Text>{`Cloudiness ${clouds}%`}</Text>
-            </Item>
-        </Container>
-    )
+  return (
+    <Container>
+      <Item>
+        <Image><HumidityImage /></Image>
+        <Text>{`Humidity ${humidity}%`}</Text>
+      </Item>
+      <Item>
+        <Image><WindImage /></Image>
+        <Text>{`Wind ${wind} m/s`}</Text>
+      </Item>
+      <Item>
+        <Image><PressureImage /></Image>
+        <Text>{`Pressure ${pressure} hPa`}</Text>
+      </Item>
+      <Item>
+        <Image><CloudsImage /></Image>
+        <Text>{`Cloudiness ${clouds}%`}</Text>
+      </Item>
+    </Container>
+  )
 }
 
 export {
-    WeatherDetails
+  WeatherDetails
 }
