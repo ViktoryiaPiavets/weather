@@ -6,7 +6,7 @@ export const getUrlWithCoords = (lat, lon) => {
   return `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=d5d3f0cb21de6ab59ec38f7cbadea3f5`
 }
 
-export const convertDegrees = (metrics, temperature) => metrics === 'C' ? temperature : temperature * 9 / 5 + 32;
+export const convertDegrees = (metrics, temperature) => metrics === 'C' ? Math.round(temperature) : Math.round(temperature * 9 / 5 + 32);
 
 export const getCurrentLocation = () => {
   return new Promise((resolve, reject) => {

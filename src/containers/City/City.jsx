@@ -54,10 +54,11 @@ const City = () => {
           </LeftColumn>
           <TemperatureBlock
             iconPath={data?.weather[0]?.icon}
-            temperature={Math.floor(data?.main?.temp)}
+            temperature={data?.main?.temp}
             metrics={metrics}
-            min={Math.floor(data?.main?.temp_min)}
-            max={Math.floor(data?.main?.temp_max)}
+            min={data?.main?.temp_min}
+            max={data?.main?.temp_max}
+            feelsLike={data?.main?.feels_like}
           />
           <Modal
             open={isModalOpen}

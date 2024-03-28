@@ -56,7 +56,8 @@ const Degree = styled.p`
         flex-grow: 1;        
     }
 
-    @media screen and (max-width: 800px) {        
+    @media screen and (max-width: 800px) {
+        font-size: 36px;     
         margin: 0;       
     }
 
@@ -70,10 +71,15 @@ const Degree = styled.p`
 `
 
 const Range = styled.div`
-    font-size: 30px;
+    font-size: 26px;
 
     @media screen and (max-width: 1000px) {        
-        font-size: 24px;
+        font-size: 22px;
+        flex-grow: 1;
+    }
+
+    @media screen and (max-width: 700px) {        
+        font-size: 20px;
         flex-grow: 1;
     }
 
